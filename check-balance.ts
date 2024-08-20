@@ -8,8 +8,8 @@ const adress = keypair.publicKey;
 const lamports = 7 * (10 ** 8)
 
 //airdrop 0,7
-// await airdropIfRequired(connection, adress, lamports, lamports)
+await airdropIfRequired(connection, adress, lamports, lamports)
 
 const balance = await connection.getBalance(adress)
 
-console.log(balance);
+console.log(balance/ ( 10 **9));
